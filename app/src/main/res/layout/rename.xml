@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        >
+
+        <LinearLayout
+            android:background="@drawable/rename_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:textColor="#00ff00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/renameTitle"
+                android:textSize="12pt"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                />
+            <LinearLayout
+                android:background="#000000"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+            </LinearLayout>
+
+
+            <EditText
+                android:layout_marginBottom="5dp"
+                android:textColor="#00ff00"
+                android:id="@+id/renameText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/style_rename"/>
+
+            <include layout="@layout/ok"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
